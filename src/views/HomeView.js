@@ -4,7 +4,7 @@ import React from "react";
 import InputForm from "../components/InputForm";
 import Graph from "../components/Graph";
 import CurrentDetails from "../components/CurrentDetails";
-// import WeeklyTable from "../components/WeeklyTable";
+import WeeklyTable from "../components/WeeklyTable";
 // import { getWeather } from "../store/Reducer";
 import "../styles/HomeView.css";
 
@@ -22,7 +22,7 @@ function HomeView() {
 			</header>
       <CurrentDetails />
       <Graph />
-			{/* <WeeklyTable /> */}
+			<WeeklyTable />
 		</>
 	);
 }

@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux"
-import React, { useState, useEffect } from "react"
+import React from "react"
 import moment from "moment"
-import { react } from "@babel/types"
 
 function Graph() {
 
@@ -22,15 +21,12 @@ function Graph() {
       }
     }
   }
-  
-  console.log(nextHours)
-
 
   return (
     weather !== null &&
     (
       <>
-        <div className="line-time">
+        <div className="timeline">
           <div className="container-nextHours">
             <div className="container-summary">
               {resumeWeather !== null && resumeWeather.map(range => {
@@ -68,32 +64,4 @@ function Graph() {
   );
 }
 
-
-// console.log(summaries)
-//  return (
-//   <>
-//   <table class="table table-borderless">
-//       <tr>
-//       {summaries.map(range => <td width={`${(range.hours/49)*100}%`} className={range.summary.toLowerCase.replaceAll(" ", "-")}>{range.summary}</td>)}
-//         <th>Week</th>
-//       </tr>
-//     {/* <tbody>{locations.map( location => 
-//       <tr><td>{location}</td></tr>
-//       )}</tbody> */}
-//   </table>
-// </>
-// // En React
-//  )
-// }
-
 export default Graph
-
-
-
-
-
-
-
-
-
-

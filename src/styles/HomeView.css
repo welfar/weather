@@ -6,7 +6,6 @@ header {
 }
 
 .inputForm {
-  /* display: flex; */
   position: relative;
   width: 46%;
   height: 100%;
@@ -67,9 +66,9 @@ header {
   font-weight: 300;
 }
 
-.line-time {
+.timeline {
   display: flex;
-  margin-top: 30px;
+  margin: 30px auto 30px;
   width: 100%;
   justify-content: center;
 }
@@ -86,7 +85,7 @@ header {
   background-color: #b6bfcb;
 }
 
-.light-rain {
+.possible-light-rain {
   background-color: #80a5d6;
 }
 
@@ -98,6 +97,34 @@ header {
   background-color: #4a80c7;
 }
 
+.humid-and-overcast {
+  background-color: #566573;
+}
+
+.rain-and-humid {
+  background-color: #AED6F1;
+}
+
+.humid-and-mostly-cloudy {
+  background-color: #BDC3C7;
+}
+
+.possible-light-rain-and-humid {
+  background-color: #D4E6F1;
+}
+
+.possible-drizzle {
+  background-color: #EAF2F8;
+}
+
+.humid-and-partly-cloudy {
+  background-color: #D5DBDB;
+}
+
+.humid {
+  background-color: #A9DFBF;
+}
+
 .container-nextHours{
   display: flex;
   width: 1500px;
@@ -105,10 +132,15 @@ header {
   padding: 0;
 }
 
+.container-summary {
+  display: table;
+}
+
 .container-summary span {
   display: table-cell;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border: 0;
   height: 40px;
 }
 
