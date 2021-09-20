@@ -8,15 +8,10 @@ import { options } from "../assets/data/ListOptions"
 function InputForm() {
   const dispatch = useDispatch()
   const [city, setCity] = useState("")
-  const [coordinate, setCoordinate] = useState({
-    LAT: "",
-    LONG: ""
-  })
 
   const handleAssign = (e) => {
     setCity(e.label)
     const location = cities(e.value)
-    setCoordinate({LAT: location.LAT, LONG: location.LONG })
     const LAT = location.LAT
     const LONG = location.LONG
     dispatch (getWeather(LAT, LONG))
